@@ -47,7 +47,7 @@
 		    '(height . 74)
 		    '(left . -100 )
 ;		    '(border-color . "gray9")
-		    '(cursor-color . "snow");;カーソル色
+;		    '(cursor-color . "snow");;カーソル色
 		    ;;'(cursor-type . hairline-caret);;カーソルの表示
 		    ;;スクロールバーを消す
 		    '(vertical-scroll-bars . nil)
@@ -99,8 +99,8 @@
 ;;auto-highlight
 ;;https://github.com/mitsuo-saito/auto-highlight-symbol-mode
 ;;http://d.hatena.ne.jp/yuheiomori0718/20111222/1324562208
-(require 'auto-highlight-symbol)
-(global-auto-highlight-symbol-mode t)
+;(require 'auto-highlight-symbol)
+;(global-auto-highlight-symbol-mode t)
 
 ;; smart-compile.el
 ;; http://homepage.mac.com/zenitani/elisp-j.html#smart-compile
@@ -189,55 +189,57 @@
 ;; yasnippet
 ;; git clone https://github.com/capitaomorte/yasnippet
 ;; http://ochiailab.blogspot.jp/2012/12/yasnippet.html
-(require 'yasnippet)
-(custom-set-variables
- '(yas/snippet-dirs 
-   '("~/.emacs.d/plugins/yasnippet/snippets"
-     "~/.emacs.d/etc/snippets")))
-(yas-global-mode 1)
+;; (require 'yasnippet)
+;; (custom-set-variables
+;;  '(yas/snippet-dirs 
+;;    '("~/.emacs.d/plugins/yasnippet/snippets"
+;;      "~/.emacs.d/etc/snippets")))
+;; (yas-global-mode 1)
 
 
-;; 既存スニペットを挿入
-(define-key yas-minor-mode-map (kbd "C-x y i") 'yas-insert-snippet)
-;; 新規スニペットを作成するバッファを用意する
-(define-key yas-minor-mode-map (kbd "C-x y n") 'yas-new-snippet)
-;; 既存スニペットの閲覧、編集
-(define-key yas-minor-mode-map (kbd "C-x y v") 'yas-visit-snippet-file)
+;; ;; 既存スニペットを挿入
+;; (define-key yas-minor-mode-map (kbd "C-x y i") 'yas-insert-snippet)
+;; ;; 新規スニペットを作成するバッファを用意する
+;; (define-key yas-minor-mode-map (kbd "C-x y n") 'yas-new-snippet)
+;; ;; 既存スニペットの閲覧、編集
+;; (define-key yas-minor-mode-map (kbd "C-x y v") 'yas-visit-snippet-file)
  
-;; anything interface
-(eval-after-load "anything-config"
-  '(progn
-     (defun my-yas/prompt (prompt choices &optional display-fn)
-       (let* ((names (loop for choice in choices
-                           collect (or (and display-fn (funcall display-fn choice))
-                                       choice)))
-              (selected (anything-other-buffer
-                         `(((name . ,(format "%s" prompt))
-                            (candidates . names)
-                            (action . (("Insert snippet" . (lambda (arg) arg))))))
-                         "*anything yas/prompt*")))
-         (if selected
-             (let ((n (position selected names :test 'equal)))
-               (nth n choices))
-           (signal 'quit "user quit!"))))
-     (custom-set-variables '(yas/prompt-functions '(my-yas/prompt)))
-     (define-key anything-command-map (kbd "y") 'yas/insert-snippet)))
+;; ;; anything interface
+;; (eval-after-load "anything-config"
+;;   '(progn
+;;      (defun my-yas/prompt (prompt choices &optional display-fn)
+;;        (let* ((names (loop for choice in choices
+;;                            collect (or (and display-fn (funcall display-fn choice))
+;;                                        choice)))
+;;               (selected (anything-other-buffer
+;;                          `(((name . ,(format "%s" prompt))
+;;                             (candidates . names)
+;;                             (action . (("Insert snippet" . (lambda (arg) arg))))))
+;;                          "*anything yas/prompt*")))
+;;          (if selected
+;;              (let ((n (position selected names :test 'equal)))
+;;                (nth n choices))
+;;            (signal 'quit "user quit!"))))
+;;      (custom-set-variables '(yas/prompt-functions '(my-yas/prompt)))
+;;      (define-key anything-command-map (kbd "y") 'yas/insert-snippet)))
 
 
 ;;auto complete
 ;; M-x auto-complete-mode -> ON
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/site-lisp/auto-complete-1.3.1/ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/site-lisp/auto-complete-1.3.1/dict")
 (ac-config-default)
-(setq ac-use-menu-map t)
+
+;(setq ac-use-menu-map t)
 ;; デフォルトで設定済み
-(define-key ac-menu-map "\C-n" 'ac-next)
-(define-key ac-menu-map "\C-p" 'ac-previous)
+;(define-key ac-menu-map "\C-n" 'ac-next)
+;(define-key ac-menu-map "\C-p" 'ac-previous)
 
-(add-to-list 'ac-modes 'web-mode)
+;(add-to-list 'ac-modes 'web-mode)
 
-(ac-set-trigger-key "TAB")
-(ac-set-trigger-key "<tab>")
+;(setq ac-auto-start 2)
+;(ac-set-trigger-key "TAB")
+;(ac-set-trigger-key "<tab>")
 
 ;; gtags
 ;; http://qiita.com/yewton@github/items/d9e686d2f2a092321e34
