@@ -1,6 +1,3 @@
-;; color
-(load-theme 'misterioso)
-
 
 ;;ツールバー非表示
 (tool-bar-mode -1)
@@ -53,7 +50,7 @@
 (global-hl-line-mode)
 
 ;;linum mode
-;(global-linum-mode t)
+(global-linum-mode t)
 
 ;;windowの設定
 (setq default-frame-alist
@@ -62,15 +59,14 @@
                '(height . 47)
                '(top . 0)
                '(left . 0)
-               '(alpha . (90 60)))
+               '(alpha . (100 60)))
               default-frame-alist))
 ;; font
 (set-face-attribute
  'default nil
  :family "Monaco"
- :height 120)
+ :height 80)
 
 (set-fontset-font
  nil 'japanese-jisx0208
  (font-spec :family "Hiragino Maru Gothic Pro"))
-
