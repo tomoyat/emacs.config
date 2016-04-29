@@ -16,7 +16,10 @@
 (el-get-bundle init-loader)
 (el-get-bundle company-mode)
 (el-get-bundle helm)
+(el-get-bundle helm-git-grep)
+(el-get-bundle helm-ls-git)
 (el-get-bundle popwin)
+
 ;; 言語系
 
 ;; init
