@@ -21,7 +21,10 @@
 (el-get-bundle popwin)
 
 ;; 言語系
-
+(el-get-bundle ruby-mode)
+(el-get-bundle ruby-block)
+(el-get-bundle ruby-end)
+(el-get-bundle yaml-mode)
 
 ;; init
 (init-loader-load "~/.emacs.d/inits")
