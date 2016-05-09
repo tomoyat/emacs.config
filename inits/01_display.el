@@ -44,3 +44,5 @@
 (set-fontset-font
  nil 'japanese-jisx0208
  (font-spec :family "Hiragino Maru Gothic Pro"))
+
+(load-theme 'tango-dark t)

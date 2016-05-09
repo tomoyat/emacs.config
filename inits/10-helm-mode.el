@@ -13,6 +13,6 @@
     ad-do-it))
 
 ;; gitから検索
-(global-set-key (kbd "C-x g f") 'helm-git-files)
+(global-set-key (kbd "C-x g f") 'helm-ls-git-ls)
 ;; git grep
 (global-set-key (kbd "C-x g g") 'helm-git-grep)

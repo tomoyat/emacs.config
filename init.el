@@ -22,5 +22,6 @@
 
 ;; 言語系
 
+
 ;; init
 (init-loader-load "~/.emacs.d/inits")
