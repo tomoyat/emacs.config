@@ -18,13 +18,18 @@
 (el-get-bundle helm)
 (el-get-bundle helm-git-grep)
 (el-get-bundle helm-ls-git)
-(el-get-bundle popwin)
+(el-get-bundle kyagi/shell-pop-el)
 
 ;; 言語系
 (el-get-bundle ruby-mode)
 (el-get-bundle ruby-block)
 (el-get-bundle ruby-end)
 (el-get-bundle yaml-mode)
+(el-get-bundle web-mode)
+(el-get-bundle scala-mode2)
+
+;; mode
+(el-get-bundle moe-theme)
 
 ;; init
 (init-loader-load "~/.emacs.d/inits")

@@ -41,8 +41,9 @@
  :family "Monaco"
  :height 80)
 
-(set-fontset-font
- nil 'japanese-jisx0208
- (font-spec :family "Hiragino Maru Gothic Pro"))
+(load-theme 'moe-light t)
 
-(load-theme 'tango-dark t)
+;; (set-fontset-font
+;;  nil 'japanese-jisx0208
+;;  (font-spec :family "Hiragino Maru Gothic Pro"))
+

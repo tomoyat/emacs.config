@@ -20,8 +20,8 @@
   (setq mac-pass-control-to-system t)) ; コントロールキーを Mac ではなく Emacs に渡す
 
 ;; commandとoptionのいれかえ
-(setq ns-command-modifier (quote meta))
-(setq ns-alternate-modifier (quote super))
+;(setq ns-command-modifier (quote meta))
+;(setq ns-alternate-modifier (quote super))
 
 ;; Ctrl-Zでundo
 (define-key global-map "\C-z" 'undo)
@@ -34,4 +34,3 @@
 ;; フォントロックモード
 ;; 拡張子ごとによしなに綺麗にしてくれる
 (global-font-lock-mode t)
-

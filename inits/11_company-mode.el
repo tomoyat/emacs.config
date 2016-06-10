@@ -21,3 +21,6 @@
 ;; C-sで絞り込む
 (define-key company-active-map (kbd "C-s") 'company-filter-candidates)
 
+;;優先順位の調整
+;;http://qiita.com/sune2/items/b73037f9e85962f5afb7
+(setq company-transformers '(company-sort-by-statistics company-sort-by-backend-importance))
