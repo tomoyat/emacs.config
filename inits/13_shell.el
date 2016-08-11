@@ -1,5 +1,4 @@
 (custom-set-variables
- '(shell-pop-default-directory "~/")
  '(shell-pop-shell-type (quote ("eshell" "*eshell*"
                                 (lambda nil (eshell shell-pop-term-shell)))))
  '(shell-pop-term-shell "/usr/bin/zsh")

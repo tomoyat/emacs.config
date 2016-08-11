@@ -19,6 +19,7 @@
 (el-get-bundle helm-git-grep)
 (el-get-bundle helm-ls-git)
 (el-get-bundle kyagi/shell-pop-el)
+(el-get-bundle yasnippet)
 
 ;; 言語系
 (el-get-bundle ruby-mode)
@@ -26,7 +27,18 @@
 (el-get-bundle ruby-end)
 (el-get-bundle yaml-mode)
 (el-get-bundle web-mode)
+(el-get-bundle js2-mode)
+
+;; for scala
 (el-get-bundle scala-mode2)
+(el-get-bundle dash)
+(el-get-bundle s)
+(el-get-bundle popup)
+(el-get-bundle sbt-mode)
+;(el-get-bundle yasnippet)
+(el-get-bundle ensime/emacs-scala-mode)
+(el-get-bundle ensime/ensime-emacs)
+
 
 ;; mode
 (el-get-bundle moe-theme)

@@ -34,16 +34,23 @@
 
 ;;linum mode
 (global-linum-mode t)
-
-;; font
-(set-face-attribute
- 'default nil
- :family "Monaco"
- :height 80)
+(setq linum-format "%d ")
 
 (load-theme 'moe-light t)
 
-;; (set-fontset-font
-;;  nil 'japanese-jisx0208
-;;  (font-spec :family "Hiragino Maru Gothic Pro"))
+; 透明にする
+(if window-system (progn
+            (set-frame-parameter (selected-frame) 'alpha '(0.95))
+            ))
 
+;; fontの設定
+;; http://qiita.com/melito/items/238bdf72237290bc6e42
+;; fontの確認は以下をscratchで実行(C-j)
+;; (dolist (x (font-family-list)) (print x))
+
+;; デフォルトを設定
+(set-face-attribute 'default nil :family "Source Han Code JP" :height 80)
+;; (set-face-attribute 'default nil :family "Monaco" :height 80)
+
+;; 日本語だけ上書き
+;(set-fontset-font t 'japanese-jisx0208 (font-spec :family "Tsukushi B Round Gothic" ))
