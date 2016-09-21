@@ -20,7 +20,6 @@
 ;; C-sで絞り込む
 (define-key company-active-map (kbd "C-s") 'company-filter-candidates)
 
-
 ;; 色
 (set-face-attribute 'company-tooltip nil :foreground "black" :background "lightgrey")
 (set-face-attribute 'company-tooltip-common nil :foreground "black" :background "lightgrey")

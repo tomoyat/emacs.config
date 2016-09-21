@@ -49,8 +49,8 @@
 ;; (dolist (x (font-family-list)) (print x))
 
 ;; デフォルトを設定
-(set-face-attribute 'default nil :family "Source Han Code JP" :height 80)
-;; (set-face-attribute 'default nil :family "Monaco" :height 80)
+;; (set-face-attribute 'default nil :family "Source Han Code JP" :height 100)
+(set-face-attribute 'default nil :family "Ricty Diminished Discord" :height 140)
 
 ;; 日本語だけ上書き
 ;(set-fontset-font t 'japanese-jisx0208 (font-spec :family "Tsukushi B Round Gothic" ))
