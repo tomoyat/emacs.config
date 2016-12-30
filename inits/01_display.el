@@ -40,7 +40,7 @@
 
 ; 透明にする
 (if window-system (progn
-            (set-frame-parameter (selected-frame) 'alpha '(0.95))
+            (set-frame-parameter (selected-frame) 'alpha '(0.90))
             ))
 
 ;; fontの設定

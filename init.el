@@ -11,6 +11,7 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
+;; https://masutaka.net/chalow/2015-06-17-1.html
 ;; el-getで入れるpackageの設定
 ;; util
 (el-get-bundle init-loader)
@@ -19,6 +20,7 @@
 (el-get-bundle helm-git-grep)
 (el-get-bundle helm-ls-git)
 (el-get-bundle kyagi/shell-pop-el)
+(el-get-bundle exec-path-from-shell)
 (el-get-bundle yasnippet)
 
 ;; 言語系
@@ -30,12 +32,10 @@
 (el-get-bundle js2-mode)
 
 ;; for scala
-(el-get-bundle scala-mode2)
 (el-get-bundle dash)
 (el-get-bundle s)
 (el-get-bundle popup)
-(el-get-bundle sbt-mode)
-;(el-get-bundle yasnippet)
+(el-get-bundle ensime/emacs-sbt-mode)
 (el-get-bundle ensime/emacs-scala-mode)
 (el-get-bundle ensime/ensime-emacs)
 

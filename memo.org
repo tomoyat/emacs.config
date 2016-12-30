@@ -2,6 +2,8 @@
 
 ** default
 
+*** 移動
+
 | cmd   | 役割             |
 |-------+------------------|
 | C-v   | 次のページ       |
@@ -15,6 +17,15 @@
 | C-M-p | 関数の始まり     |
 | M-g g | line jump        |
 
+*** その他
+
+| C-h b        | key bind一覧                            |
+| C-x ^        | 縦に広げる                              |
+| C-x }        | 横に広げる                              |
+| C-x {        | 横に広げる                              |
+| C-u 5        | そのあとのコマンドをくりかえす          |
+| C-x C-b d+ x | C-x C-bの画面dで選択したbufferをxで消す |
+
 ** helm
 
 | key     | 意味           |
@@ -23,12 +34,15 @@
 | C-c i   | imenu          |
 | C-x b   | buffer         |
 | M-y     | kill ring      |
+| C-x g g | helm git grep  |
+| C-x g f | helm git ls    |
 
 ** scala
 
-| key        | 内容         |
-|------------+--------------|
-| M-x ensime | ensimeの開始 |
+| key              | 内容                    |
+|------------------+-------------------------|
+| M-x ensime       | ensimeの開始            |
+| sbt ensimeConfig | sbtでensimeのfileを作る |
 
 ** Org-modeの使いかた
 
