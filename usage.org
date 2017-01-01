@@ -1,0 +1,28 @@
+* counsel
+
+| C-x g l | counsel-git      |
+| C-x g g | counsel-git-grep |
+| C-x C-r | counsel-recentf  |
+| C-x l   | counsel-bookmark |
+| C-x i   | counsel-imenu    |
+
+* orgコマンド
+
+| C-c c | Orgキャプチャー |
+
+* multiple cursors
+
+| C-S-c C-S-c (Ctrl-Shift-c) | 選択範囲を一括編集         |
+| C->                        | 次のラインも選択           |
+| C-<                        | 前のラインを選択           |
+| C-c C-<                    | 選択した単語と同じのを選択 |
+* magit
+
+| C-S-m |magitの起動|
+
+以下magit-statusを起動した状態で
+
+| s | git add      |
+| c | git commit   |
+| q | 戻る         |
+| g | リフレッシュ |
