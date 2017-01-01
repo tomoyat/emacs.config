@@ -25,6 +25,7 @@
 (el-get-bundle swiper) ;; for counsel
 (el-get-bundle multiple-cursors)
 (el-get-bundle magit)
+(el-get-bundle emacs-neotree)
 
 ;; 表示系
 (el-get-bundle moe-theme)

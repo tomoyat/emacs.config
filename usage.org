@@ -1,3 +1,7 @@
+* 一般
+
+|M-x revert-buffer| bufferの再読み込み|
+
 * counsel
 
 | C-x g l | counsel-git      |
@@ -17,6 +21,7 @@
 | C-<                        | 前のラインを選択           |
 | C-c C-<                    | 選択した単語と同じのを選択 |
 * magit
+http://gom.hatenablog.com/entry/20090524/1243170341
 
 | C-S-m |magitの起動|
 
@@ -26,3 +31,11 @@
 | c | git commit   |
 | q | 戻る         |
 | g | リフレッシュ |
+* neotree
+
+| f8 | neotreeの表示               |
+| C  | 選択したdirをrootとして表示 |
+| c  | fileの作成                  |
+| r  | rename                      |
+| d  | fileの削除                  |
+
