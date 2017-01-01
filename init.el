@@ -26,6 +26,8 @@
 (el-get-bundle multiple-cursors)
 (el-get-bundle magit)
 (el-get-bundle emacs-neotree)
+(el-get-bundle exec-path-from-shell)
+(el-get-bundle flycheck)
 
 ;; 表示系
 (el-get-bundle moe-theme)

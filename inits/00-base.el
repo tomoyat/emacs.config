@@ -40,3 +40,8 @@
 
 ;; デフォルトを設定
 (set-face-attribute 'default nil :family "Ricty Diminished Discord" :height 140)
+
+;; exec-path-from-shell
+;; https://github.com/purcell/exec-path-from-shell
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
