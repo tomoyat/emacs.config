@@ -29,6 +29,11 @@
 (el-get-bundle exec-path-from-shell)
 (el-get-bundle flycheck)
 
+;;言語系
+(el-get-bundle f) ;; for emacs-racer
+(el-get-bundle emacs-racer)
+(el-get-bundle flycheck-rust)
+
 ;; 表示系
 (el-get-bundle moe-theme)
 (el-get-bundle powerline)
