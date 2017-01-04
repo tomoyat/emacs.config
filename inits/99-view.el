@@ -11,3 +11,10 @@
 ;;(moe-theme-random-color)
 (moe-theme-set-color 'orange)
  ;; (Available colors: blue, orange, green ,magenta, yellow, purple, red, cyan, w/b.)
+
+
+;; buffer local variables
+(setq-default
+ indent-tabs-mode nil
+ tab-width 2
+ c-basic-offset 2)

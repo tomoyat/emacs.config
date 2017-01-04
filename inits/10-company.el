@@ -3,7 +3,7 @@
 ;; 自動補完を offにしたい場合は, company-idle-delayを nilに設定する
 ;; auto-completeでいうところの ac-auto-start にあたる.
 (custom-set-variables
- '(company-idle-delay 0.05))
+ '(company-idle-delay 0.2))
 (custom-set-variables
  '(company-minimum-prefix-length 1)) ; デフォルトは4
 (setq company-selection-wrap-around t) ; 候補の一番下でさらに下に行こうとすると一番上に戻る

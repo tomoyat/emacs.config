@@ -13,10 +13,8 @@
 (add-hook 'racer-mode-hook #'eldoc-mode)
 ;;; racerの補完サポートを使う
 (add-hook 'racer-mode-hook (lambda ()
-                             (company-mode)
-                             ;;; この辺の設定はお好みで
-                             (set (make-variable-buffer-local 'company-idle-delay) 0.1)
-                             (set (make-variable-buffer-local 'company-minimum-prefix-length) 0)))
+                             (company-mode)))
+
 
 (require 'rust-mode)
 (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)

@@ -30,9 +30,14 @@
 (el-get-bundle flycheck)
 
 ;;言語系
+;;; rust
 (el-get-bundle f) ;; for emacs-racer
 (el-get-bundle emacs-racer)
 (el-get-bundle flycheck-rust)
+
+;;; cc
+(el-get-bundle cc-mode)
+(el-get-bundle cmake-mode)
 
 ;; 表示系
 (el-get-bundle moe-theme)
