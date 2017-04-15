@@ -28,6 +28,8 @@
 (el-get-bundle emacs-neotree)
 (el-get-bundle exec-path-from-shell)
 (el-get-bundle flycheck)
+(el-get-bundle ace-jump-mode)
+(el-get-bundle expand-region)
 
 ;;言語系
 ;;; rust

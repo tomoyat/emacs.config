@@ -14,3 +14,5 @@
 (add-to-list 'auto-mode-alist '("/BUILD$" . python-mode))
 
 (add-hook 'c-mode-common-hook 'flycheck-mode)
+(add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++11")))
+

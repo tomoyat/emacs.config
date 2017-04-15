@@ -39,3 +39,11 @@ http://gom.hatenablog.com/entry/20090524/1243170341
 | r  | rename                      |
 | d  | fileの削除                  |
 
+* expand-region
+
+|C-.|expand-region|
+
+* ace-jump-mode
+
+|C-l|ace-jump-line-mode|
+|C-;|ace-jump-word-mode|
