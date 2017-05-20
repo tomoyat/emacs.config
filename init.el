@@ -41,6 +41,10 @@
 (el-get-bundle cc-mode)
 (el-get-bundle cmake-mode)
 
+;;; ruby
+(el-get-bundle ruby-mode)
+(el-get-bundle ruby-electric)
+
 ;; 表示系
 (el-get-bundle moe-theme)
 (el-get-bundle powerline)

@@ -47,3 +47,8 @@ http://gom.hatenablog.com/entry/20090524/1243170341
 
 |C-l|ace-jump-line-mode|
 |C-;|ace-jump-word-mode|
+* bookmark
+
+| C-x r l | bookmark list                             |
+| d       | bookmark listの中で削除マークをつける     |
+| x       | bookmark listの削除マークのエントリを消す |
